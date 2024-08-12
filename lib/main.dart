@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
+import 'package:platzi_trips_app/review_list.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -37,7 +39,8 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
           centerTitle: true,
         ),
-        body: DescriptionPlace("Bahamas", 4, descriptionContent),
+        //body: DescriptionPlace("Bahamas", 4, descriptionContent),
+        body: ReviewList()
       )
     );
   }

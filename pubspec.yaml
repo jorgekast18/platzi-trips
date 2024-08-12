@@ -89,6 +89,10 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 
+  assets:
+    - assets/img/traveler.jpg
+    - assets/img/traveler_girl.jpg
+    - assets/img/pet-travel.png
   fonts:
     - family: Lato
       fonts:
