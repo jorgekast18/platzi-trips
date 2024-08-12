@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+  String descriptionContent = 'Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, sapien leo praesent etiam iaculis metus ut, consequat lacinia taciti ultrices at tellus integer. Nulla ad conubia donec senectus netus ultrices semper, metus malesuada ridiculus mollis varius himenaeos tellus, potenti habitasse natoque phasellus integer tristique.';
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -38,7 +37,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
           centerTitle: true,
         ),
-        body: DescriptionPlace(),
+        body: DescriptionPlace("Bahamas", 4, descriptionContent),
       )
     );
   }
