@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
+import 'package:platzi_trips_app/gradient_back.dart';
 import 'package:platzi_trips_app/review_list.dart';
 
 void main() {
@@ -33,14 +34,17 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Trips"),
-          titleTextStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color: Colors.white),
-          backgroundColor: Colors.blue,
-          centerTitle: true,
-        ),
-        //body: DescriptionPlace("Bahamas", 4, descriptionContent),
-        body: ReviewList()
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace("Bahamas", 4, descriptionContent),
+                ReviewList()
+              ],
+            ),
+            GradientBack()
+          ],
+        )
       )
     );
   }
