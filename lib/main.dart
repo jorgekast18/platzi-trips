@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
 import 'package:platzi_trips_app/gradient_back.dart';
 import 'package:platzi_trips_app/header_appbar.dart';
+import 'package:platzi_trips_app/platzi_trips.dart';
 import 'package:platzi_trips_app/review_list.dart';
 
 void main() {
@@ -9,7 +10,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  String descriptionContent = 'Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, sapien leo praesent etiam iaculis metus ut, consequat lacinia taciti ultrices at tellus integer. Nulla ad conubia donec senectus netus ultrices semper, metus malesuada ridiculus mollis varius himenaeos tellus, potenti habitasse natoque phasellus integer tristique.';
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -34,19 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Scaffold(
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Bahamas", 4, descriptionContent),
-                ReviewList()
-              ],
-            ),
-            HeaderAppBar()
-          ],
-        )
-      )
+      home: PlatziTrips()
     );
   }
 }
