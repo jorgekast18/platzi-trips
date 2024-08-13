@@ -90,15 +90,7 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
   assets:
-    - assets/img/traveler.jpg
-    - assets/img/traveler_girl.jpg
-    - assets/img/pet-travel.png
-    - assets/img/pico_loro.jpeg
-    - assets/img/beach_sunset.jpeg
-    - assets/img/eagle-beach.jpg
-    - assets/img/river.jpeg
-    - assets/img/salento.jpg
-    - assets/img/Filandia.jpg
+    - assets/img/
   fonts:
     - family: Lato
       fonts:
